@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link href='http://fonts.googleapis.com/css?family=Elsie' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/principal.css" />
+		<title>Blog</title>
+	</head>
+	<body>
+		<!-- Todo lo que sea un encabezado va dentro de header -->
+		<header>
+			<h1>{% block titulo %}{% endblock %}</h1>
+			<nav>
+				<ul>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="/contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		{% block contenido %}
+		
+		{% endblock %}
+		<footer>
+			<div id="sociales">
+				<h2>Síguenos:</h2>
+				<img class="social" src="imagenes/vidrio/facebook.png" />
+				<img class="social" src="imagenes/vidrio/twitter.png" />
+				<img class="social" src="imagenes/vidrio/google.png" />
+			</div>
+			<div id="suscribir">
+				<h2>Suscribir :</h2>
+				<label for="suscribir-email">Email :</label>
+				<input id="suscribir-email" type="text" />
+			</div>
+		</footer>
+	</body>
+</html>
